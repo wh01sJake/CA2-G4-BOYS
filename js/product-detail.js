@@ -38,7 +38,7 @@ const products = {
         price: 89.99,
         description: "As promised, Nike revive the Air Max TL 2.5 out from its archive. This 'Metallic Silver' iteration returns for the modern day pundit in a mesh upper that's layered with wavy synthetic panelling. Underfoot, full-length Air cushioning provides optimal comfort where it matters most, while reflective accents add the finishing touches. | FZ4110-002.",
         images: ["img/Sneaker5/Sneaker5.1.webp", "img/Sneaker5/Sneaker5.2.webp", "img/Sneaker5/Sneaker5.3.webp", "img/Sneaker5/Sneaker5.4.webp"],
-        soldOut: false  // This product is in stock 
+        soldOut: true  // This product is sold out 
     },
     6: {
         name: "New Balance 740 - size? exclusive Women's",
