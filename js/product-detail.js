@@ -11,7 +11,7 @@ const products = {
     2: {
         name: "Jordan Air 1 low",
         brand: "Nike",
-        price: 120.00,
+        price: 130.00,
         description: "Nike's Air Jordan 1 'Game Royal' is a like-for-like colour block with the OG model from the '80s. The upper is constructed from a crisp white leather underlay and 'Blue Royal' panelling. Underfoot, a Nike Air-infused midsole offers up pillowy bounce and sits atop a hoops pivot circled rubber outsole, while embossed Wings etch off across the heel caps to call it a day. | CZ0790-140.",
         images: ["img/Sneaker2/Sneaker2.1.webp", "img/Sneaker2/Sneaker2.2.webp", "img/Sneaker2/Sneaker2.3.webp", "img/Sneaker2/Sneaker2.4.webp"],
         soldOut: false  // This product is in stock
