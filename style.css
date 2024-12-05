@@ -1,0 +1,363 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Ensure the hero section takes up the full height of the viewport */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Ensure the carousel images fill the entire container */
+.hero .carousel-item img {
+    object-fit: cover;  /* Make sure images fill the container without distortion */
+    height: 100vh;      /* Full height for each slide */
+    width: 100%;        /* Full width for each slide */
+}
+
+/* Carousel caption styling (text over the image) */
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+/* Styling for the headline and description in the carousel */
+.carousel-caption h5 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the CTA button */
+.carousel-caption .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    background-color: #007bff;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the CTA button */
+.carousel-caption .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Featured Products Section */
+.featured-products {
+    margin-top: 50px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+/* Title styling to prevent overflow */
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Prevents the title from wrapping to a new line */
+    line-height: 1.4;
+}
+
+/* Ensures all product images have the same size */
+.card-img-top {
+    width: 100%;
+    height: 250px; /* Set a fixed height for all product images */
+    object-fit: cover; /* This ensures images cover the area while maintaining aspect ratio */
+}
+
+/* Ensures the price text does not overflow */
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Cart container */
+#cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Cart item layout (flexbox for horizontal alignment) */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Product Name (truncate long names) */
+.product-name {
+    flex-grow: 1;  /* Makes the name take up remaining space */
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;      /* Prevent wrapping */
+    overflow: hidden;        /* Hide overflow */
+    text-overflow: ellipsis; /* Truncate with ellipsis */
+}
+
+/* Product Price (fixed width to avoid shifting) */
+.product-price {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100px;  /* Fixed width for price */
+    text-align: right;  /* Align price to the right */
+}
+
+/* Remove Button */
+.btn-danger {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Optional: Cart item hover effect */
+.cart-item:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+
+
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-primary:hover, .btn-info:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+/*--------blog-------*/
+
+/* Shop Updates Section */
+.shop-updates {
+    padding: 40px 0;
+    background: url('img/blackfriday_background.jpg') no-repeat center center/cover;
+    position: relative;
+    color: white;
+}
+
+.shop-updates::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+    z-index: 1;
+}
+
+.shop-updates h2 {
+    color: #f5a623; /* Highlighted title */
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.shop-updates .news-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.shop-updates .news-item:hover {
+    transform: scale(1.03);
+}
+
+.shop-updates .news-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f5a623;
+}
+
+.shop-updates .news-content {
+    padding: 20px;
+    color: #333;
+}
+
+.shop-updates .news-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.shop-updates .news-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Review Section Styles */
+.reviews-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.review-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.review-item h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.review-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.review-item img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Review Form Styles */
+.form-control {
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    border-radius: 5px;
+}
+/*------blog end-------*/
+
+
+/*-----about------*/
+
+/* History Section with Background */
+.history-section {
+  background: url('img/history.jpg') no-repeat center center/cover;
+  color: white; /* Ensure text is readable */
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.history-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better contrast */
+  z-index: -1;
+}
+
+.history-section .text-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.history-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #f5a623; /* Highlight color (adjust as needed) */
+}
+
+.history-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #ffecb3; /* Softer highlight for secondary headings */
+}
+
+.history-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: white;
+}
+/*------about end-------*/
