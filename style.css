@@ -161,7 +161,7 @@ a {
 
 /* Buttons */
 .btn-primary {
-    background-color: #007bff;
+    background-color: #007bff; /*background color for btn */
     border-color: #007bff;
 }
 
