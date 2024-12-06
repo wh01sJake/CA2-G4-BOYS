@@ -1,5 +1,8 @@
-// Define product data (in a real app, this could come from an API or a database)
+// x23287951 Olalekan Ade-Ojo 
+// Product-details Java Script Section
+// Function to define product data (in a real app, this could come from an API or a database)
 const products = {
+    //Products available on the Shop page
     1: {
         name: "Jordan Air 3",
         brand: "Nike",
@@ -160,8 +163,8 @@ const products = {
         images: ["img/Sneaker20/Sneaker20.1.webp", "img/Sneaker20/Sneaker20.2.webp", "img/Sneaker20/Sneaker20.3.webp", "img/Sneaker20/Sneaker20.4.webp"],
         soldOut: false  // This product is in stock
     },
-
-    //featured shoes
+    
+    //Products available on the featured shoes 
     999: {
         name: "Air Jordan 1 Low x Travis Scott Reverse Olive",
         brand: "Nike",
