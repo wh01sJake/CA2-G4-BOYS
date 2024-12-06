@@ -1,3 +1,5 @@
+// x23287951 Olalekan Ade-Ojo 
+// Shop Java Script Section
 // Retrieve cart from localStorage (or initialize an empty array)
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
