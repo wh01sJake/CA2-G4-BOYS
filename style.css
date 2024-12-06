@@ -22,6 +22,19 @@ a {
 }
 
 
+/* Style for active navigation item */
+.navbar-nav .nav-item.active a {
+    color: #fff !important;/* green color for active link */
+    background-color: #007bff; /* Blue background for active item */
+    pointer-events: none; /* Disable clicking on the current page link */
+}
+
+/* Optional: Style for hover effect on other links */
+.navbar-nav .nav-item a:hover {
+    background-color: #007bff; /* Darker background on hover */
+}
+
+
 /* edit here for testing */
 /* Ensure the hero section takes up the full height of the viewport */
 .hero {
