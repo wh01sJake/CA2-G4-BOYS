@@ -36,14 +36,14 @@ a {
 
 
 /* edit here for testing */
-/* Ensure the hero section takes up the full height of the viewport */
+/* Ensures the hero section takes up the full height of the viewport */
 .hero {
     position: relative;
     width: 100%;
     height: 100vh; /* Full viewport height */
 }
 
-/* Ensure the carousel images fill the entire container */
+/* Ensures the carousel images fill the entire container */
 .hero .carousel-item img {
     object-fit: cover;  /* Make sure images fill the container without distortion */
     height: 100vh;      /* Full height for each slide */
@@ -86,7 +86,8 @@ a {
 .carousel-caption .btn:hover {
     background-color: #0056b3;
 }
-
+/* x23287951 Olalekan Ade-Ojo */
+/* Shop page */
 /* Featured Products Section */
 .featured-products {
     margin-top: 50px;
