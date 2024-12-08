@@ -1,6 +1,9 @@
+/* Student: x23388749 Likun Fang 
+Responsible for  general styling,logo,navbar and fonts*/
+
 /* General Page Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Parkinsans", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -13,7 +16,9 @@ header {
 }
 
 h1, h2 {
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold weight for headings */
+    text-align: center;
     color: #333;
 }
 
@@ -23,6 +28,10 @@ a {
 
 
 /* Style for active navigation item */
+.navbar-nav .nav-item a {
+    font-family: 'Parkinsans', sans-serif; 
+}
+
 .navbar-nav .nav-item.active a {
     color: #fff !important;/* green color for active link */
     background-color: #007bff; /* Blue background for active item */
@@ -35,7 +44,7 @@ a {
 }
 
 
-/* edit here for testing */
+
 /* Ensures the hero section takes up the full height of the viewport */
 .hero {
     position: relative;
@@ -218,6 +227,8 @@ footer p {
         margin-bottom: 30px;
     }
 }
+
+
 
 
 /*--x23359889 YU-HUNG, CHIU--*/
