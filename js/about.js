@@ -1,6 +1,6 @@
 // Function to handle form submission
 function handleFormSubmit(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+    event.preventDefault(); // Prevent the form from submitting 
 
     // Get the form field values
     const name = document.getElementById('name').value;
@@ -13,7 +13,7 @@ function handleFormSubmit(event) {
         return;
     }
 
-    // Simulate form submission success (You can replace this with an actual form submission to a server)
+    // Simulate form submission success 
     alert(`Thank you, ${name}! Your message has been submitted.`);
 
     // Clear the form fields after submission
